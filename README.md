@@ -1,6 +1,6 @@
 # PyCCE-RC
 
-PyCCE-RC is a Python package for estimating panel data models using the Common Correlated Effects (CCE)[2] methodology. It extends the original CCE framework by incorporating a recently proposed Rank Condition (RC) test[1] and an augmentation algorithm[1] to potentially restore the RC when it is not satisified.
+PyCCE-RC is a Python package implementing the Common Correlated Effects (CCE)[2] estimators for panel data models with unobserved common factors. The package also incorporates a recently proposed rank condition (RC) test[1], alongside their proposed augmentation algorithm[1] designed to restore the RC when violated. PyCCE-RC supports all three CCE estimators and enables verification of the RC assumption critical for estimator consistency.
 
 [1]: De Vos, I., Everaert, G., Sarafidis, V.  (2024). *[A method to evaluate the rank condition for CCE estimators](https://www.tandfonline.com/doi/full/10.1080/07474938.2023.2292383)*.
 
@@ -20,11 +20,11 @@ PyCCE-RC is a Python package for estimating panel data models using the Common C
 - Compatible with balanced and unbalanced panel data
 
 - Modular design:
-  - `py_cce.base`: core data structures and estimation logic
-  - `py_cce.models`: individual estimator classes
+  - `py_cce.base`: core data structures and base for estimation logic
+  - `py_cce.models`:  estimator classes
   - `py_cce.utils`: CSA computation, rank condition testing, and other utilities
 
-- Fully type-checked and linted
+⚠️ Note: Some numerical instabilities may occur during estimation, affecting both the estimator classes and the rank condition test. These issues are known and will be addressed in future versions.
 
 ## 🛠 Installation
 

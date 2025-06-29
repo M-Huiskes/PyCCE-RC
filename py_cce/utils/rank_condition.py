@@ -1,3 +1,5 @@
+import warnings
+
 import numpy as np
 
 from py_cce.base.results import RankConditionTestResult
@@ -285,6 +287,12 @@ def _evaluate_rank_condition(
     tuple[bool, int, int]
         Boolean indicating whether the RC holds and the two estimated ranks.
     """
+    warnings.warn(
+        "There are still some instabilities in testing the RC, these will be fixed in future versions",
+        stacklevel=2,
+        category=UserWarning,
+    )
+
     m_hat = growth_ratio_factor_test(obs_mat=obs_mat, m_max=m_max)
     num_vars = obs_mat.shape[1]
 
