@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "PyCCE-rc"
+name = "PyCCE-RC"
 version = "0.1.0"
 description = "Package for handling panel data with strong cross-sectional dependence"
 authors = ["Merijn Huiskes <merijnhuiskes1@gmail.com>"]
