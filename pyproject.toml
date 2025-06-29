@@ -2,7 +2,7 @@
 name = "PyCCE-rc"
 version = "0.1.0"
 description = "Package for handling panel data with strong cross-sectional dependence"
-authors = ["Merijn Huiskes <merijn-huiskes@outlook.com>"]
+authors = ["Merijn Huiskes <merijnhuiskes1@gmail.com>"]
 license = "GPL-3.0-or-later"
 readme = "README.md"
 

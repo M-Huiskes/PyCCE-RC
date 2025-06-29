@@ -36,7 +36,7 @@ pip install pycce-rc
 
 **Merijn Huiskes**
 
-Email: [merijn-huiskes@outlook.com](mailto:merijn-huiskes@outlook.com)
+Email: [merijnhuiskes1@gmail.com](mailto:merijnhuiskes1@gmail.com)
 
 ## License
 
